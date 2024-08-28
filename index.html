@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        div{
+            width:350px;
+            height:350px;
+            background-color: gold;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        </style>
+        <img src="./baby.jpg" alt="" style="width: 120px;" onmouseover="baby()">
+        <img src="./pea.jpg" alt="" style="width: 250px;" onmouseover="pea()">
+    <div>
+    </div>
+    <script>
+    function baby(){
+        var getdiv=document.querySelector("div")
+        getdiv.style.backgroundImage="url('./baby.jpg')"
+        }
+        function pea(){
+            var getdiv=document.querySelector("div")
+            getdiv.style.backgroundImage="url('./pea.jpg')"
+        }
+        </script>
+</body>
+</html>

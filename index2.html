@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div {
+      height: 500px;
+      width: 600px;
+    }
+  </style>
+  <body>
+    <button onclick="rotate()">90deg</button>
+    <button onclick="rotates()">180deg</button>
+    <img src="./pea.jpg" alt="" width="400">
+    <script>
+      function rotate(){
+        var imgg = document.getElementsByTagName("img")
+        imgg[0].style.transform = "rotate(90deg)"
+      }
+      function rotates(){
+        var imgg = document.getElementsByTagName("img")
+        imgg[0].style.transform = "rotate(180deg)"
+      }
+    </script>
+  </body>
+</html>
